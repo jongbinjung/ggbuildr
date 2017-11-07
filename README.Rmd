@@ -19,7 +19,7 @@ knitr::opts_chunk$set(
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/datree)](http://cran.r-project.org/package=datree)
 
 `ggbuildr` is a simple tool for saving incremental "builds" of a ggplot object.
-Intended use-case is for saving plots for presentation slides.
+Intended use-case is to save plots for presentation slides.
 
 ## Installation
 

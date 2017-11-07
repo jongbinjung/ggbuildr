@@ -38,12 +38,12 @@
 #'   width/height)
 #'
 #' @return Saves plots to specified path.
-#' @export
 #'
 #' @examples
 #' X <- rnorm(20)
 #' Y <- X + rnorm(20)
 #'
+#' set.seed(1)
 #' pd <- data.frame(X, Y)
 #' p <- ggplot(pd, aes(X, Y)) +
 #'   geom_smooth() +
@@ -57,6 +57,8 @@
 #'
 #' # Plot point, and then smooth, and draw smooth layer on top of point
 #' build_plot(p, build_order = list(2, 1), preserve_order = FALSE)
+#'
+#' @export
 build_plot <-
   function(plot,
            filepath = NULL,
@@ -74,19 +76,19 @@ build_plot <-
 
   if (!is.null(filepath)) {
     # Deal with actual file path (e.g., setup directories and extensions)
-    dir <- ggbuildr:::.validate_path(filepath)
+    dir <- .validate_path(filepath)
     filename <- basename(tools::file_path_sans_ext(filepath))
     buildpath <- file.path(dir, subdir,
                            paste0(filename, "_%0", max_digits, "d.", build_ext))
-    builddir <- ggbuildr:::.validate_path(buildpath)
+    builddir <- .validate_path(buildpath)
 
     if (save_full) {
-      ggbuildr:::.write_plot(plot, file.path(dir, paste0(filename, ".", ext)), ...)
+      .write_plot(plot, file.path(dir, paste0(filename, ".", ext)), ...)
     }
 
     if (save_rds) {
       rdspath <- file.path(dir, "rds", paste0(filename, ".rds"))
-      rdsdir <- validate_path(rdspath)
+      rdsdir <- .validate_path(rdspath)
       readr::write_rds(plot, rdspath)
     }
   }
@@ -110,6 +112,6 @@ build_plot <-
 
     canvas$layers <- plot$layers[bo]
 
-    ggbuildr:::.write_plot(canvas, buildfile, ...)
+    .write_plot(canvas, buildfile, ...)
   })
 }
