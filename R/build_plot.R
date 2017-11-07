@@ -78,14 +78,14 @@ build_plot <-
 
   if (!is.null(filepath)) {
     # Deal with actual file path (e.g., setup directories and extensions)
-    dir <- validate_path(filepath)
+    dir <- ggbuildr:::.validate_path(filepath)
     filename <- basename(tools::file_path_sans_ext(filepath))
     buildpath <- file.path(dir, subdir,
                            paste0(filename, "_%0", max_digits, "d.", build_ext))
-    builddir <-buildr:::.validate_path(buildpath)
+    builddir <- ggbuildr:::.validate_path(buildpath)
 
     if (save_full) {
-      write_plot(plot, file.path(dir, paste0(filename, ".", ext)), ...)
+      ggbuildr:::.write_plot(plot, file.path(dir, paste0(filename, ".", ext)), ...)
     }
 
     if (save_rds) {
