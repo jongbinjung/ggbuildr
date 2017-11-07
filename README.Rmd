@@ -44,7 +44,8 @@ Y <- X + rnorm(20)
 pd <- data.frame(X, Y)
 p <- ggplot(pd, aes(X, Y)) +
   geom_smooth() +
-  geom_point() +
+  geom_point(shape = 21, size = 2,
+             fill = "white", color = "black") +
   # Fixing the limits ensure plot ranges are constant
   coord_cartesian(xlim = c(-2.5, 2), ylim = c(-4, 4))
 

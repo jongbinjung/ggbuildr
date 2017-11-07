@@ -5,7 +5,7 @@ ggbuildr
 
 [![Build Status](https://travis-ci.org/jongbinjung/ggbuildr.svg?branch=master)](https://travis-ci.org/jongbinjung/ggbuildr) [![Code Coverage](https://codecov.io/gh/jongbinjung/ggbuildr/branch/master/graph/badge.svg)](https://codecov.io/gh/jongbinjung/ggbuildr) [![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/datree)](http://cran.r-project.org/package=datree)
 
-`ggbuildr` is a simple tool for saving incremental "builds" of a ggplot object. Intended use-case is for saving plots for presentation slides.
+`ggbuildr` is a simple tool for saving incremental "builds" of a ggplot object. Intended use-case is to save plots for presentation slides.
 
 Installation
 ------------
@@ -32,7 +32,8 @@ Y <- X + rnorm(20)
 pd <- data.frame(X, Y)
 p <- ggplot(pd, aes(X, Y)) +
   geom_smooth() +
-  geom_point() +
+  geom_point(shape = 21, size = 2,
+             fill = "white", color = "black") +
   # Fixing the limits ensure plot ranges are constant
   coord_cartesian(xlim = c(-2.5, 2), ylim = c(-4, 4))
 
