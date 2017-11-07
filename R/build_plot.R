@@ -40,10 +40,6 @@
 #' @return Saves plots to specified path.
 #' @export
 #'
-#' @importFrom ggplot2 ggplot
-#' @importFrom ggplot2 geom_smooth
-#' @importFrom ggplot2 geom_point
-#'
 #' @examples
 #' X <- rnorm(20)
 #' Y <- X + rnorm(20)

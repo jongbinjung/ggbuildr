@@ -5,4 +5,5 @@
 #'
 #' @docType package
 #' @name ggbuildr
+#' @import ggplot2
 NULL
