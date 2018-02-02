@@ -3,7 +3,7 @@
 ggbuildr
 ========
 
-[![Build Status](https://travis-ci.org/jongbinjung/ggbuildr.svg?branch=master)](https://travis-ci.org/jongbinjung/ggbuildr) [![Code Coverage](https://codecov.io/gh/jongbinjung/ggbuildr/branch/master/graph/badge.svg)](https://codecov.io/gh/jongbinjung/ggbuildr) [![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/datree)](http://cran.r-project.org/package=datree)
+[![Build Status](https://travis-ci.org/jongbinjung/ggbuildr.svg?branch=master)](https://travis-ci.org/jongbinjung/ggbuildr) [![Code Coverage](https://codecov.io/gh/jongbinjung/ggbuildr/branch/master/graph/badge.svg)](https://codecov.io/gh/jongbinjung/ggbuildr) [![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/ggbuildr)](http://cran.r-project.org/package=ggbuildr)
 
 `ggbuildr` is a simple tool for saving incremental "builds" of a ggplot object. Intended use-case is to save plots for presentation slides.
 
