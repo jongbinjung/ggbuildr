@@ -64,6 +64,7 @@ edits, which can be done by setting the \code{save_rds} argument to TRUE.
 X <- rnorm(20)
 Y <- X + rnorm(20)
 
+set.seed(1)
 pd <- data.frame(X, Y)
 p <- ggplot(pd, aes(X, Y)) +
   geom_smooth() +
@@ -77,4 +78,5 @@ build_plot(p, build_order = list(2, 1))
 
 # Plot point, and then smooth, and draw smooth layer on top of point
 build_plot(p, build_order = list(2, 1), preserve_order = FALSE)
+
 }
