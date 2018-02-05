@@ -23,7 +23,13 @@ Intended use-case is to save plots for presentation slides.
 
 ## Installation
 
-To install from GitHub:
+To install from CRAN:
+
+```{r, eval=FALSE}
+# install.packages("ggbuildr")
+```
+
+or to install cutting-edge development version from Github:
 
 ```{r, eval=FALSE}
 # Currently only available as development version from Github
