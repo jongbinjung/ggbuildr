@@ -1,10 +1,10 @@
 Package: ggbuildr
 Type: Package
 Title: Save Incremental Builds of Plots
-Version: 0.1.0
+Version: 0.1.0.9000
 Author: Jongbin Jung
 Maintainer: Jongbin Jung <me@jongbin.com>
-Description: Saves a 'ggplot' object into multiple files, each with a layer 
+Description: Saves a 'ggplot' object into multiple files, each with a layer
     added incrementally. Generally to be used in presentation slides.
     Flexible enough to allow different file types for the final complete plot,
     and intermediate builds.
@@ -15,7 +15,7 @@ RoxygenNote: 6.0.1
 Suggests: testthat
 Depends:
     ggplot2
-Imports: 
+Imports:
     purrr,
     readr,
     tools
