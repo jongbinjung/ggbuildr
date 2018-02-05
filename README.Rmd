@@ -26,7 +26,7 @@ Intended use-case is to save plots for presentation slides.
 To install from CRAN:
 
 ```{r, eval=FALSE}
-# install.packages("ggbuildr")
+install.packages("ggbuildr")
 ```
 
 or to install cutting-edge development version from Github:

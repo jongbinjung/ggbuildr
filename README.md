@@ -10,7 +10,13 @@ ggbuildr
 Installation
 ------------
 
-To install from GitHub:
+To install from CRAN:
+
+``` r
+install.packages("ggbuildr")
+```
+
+or to install cutting-edge development version from Github:
 
 ``` r
 # Currently only available as development version from Github
