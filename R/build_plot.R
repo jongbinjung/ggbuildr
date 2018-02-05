@@ -15,6 +15,7 @@
 #'   without extensions. If the filepath is given without extension, the
 #'   \code{ext} and/or \code{build_ext} arguments must be specified.
 #'   Non-existing paths are created automatically.
+#'   If not specified (or set to NULL), plots are \code{print}ed.
 #' @param build_order list of numerical vectors. The order in which to build
 #'   each layer of the plot, where the first (lowest) layer is 1. Multiple
 #'   layers can be built at a single increment by specifying the list element as

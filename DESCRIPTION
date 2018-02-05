@@ -4,8 +4,8 @@ Title: Save Incremental Builds of Plots
 Version: 0.1.0
 Author: Jongbin Jung
 Maintainer: Jongbin Jung <me@jongbin.com>
-Description: Saves a ggplot object into multiple files, each with a layer added
-    incrementally. Generally to be used in presentation slides.
+Description: Saves a 'ggplot' object into multiple files, each with a layer 
+    added incrementally. Generally to be used in presentation slides.
     Flexible enough to allow different file types for the final complete plot,
     and intermediate builds.
 License: GPL-3 | file LICENSE

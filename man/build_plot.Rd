@@ -14,7 +14,8 @@ build_plot(plot, filepath = NULL, build_order, subdir = "builds",
 \item{filepath}{character string specifying where to save the plot, with or
 without extensions. If the filepath is given without extension, the
 \code{ext} and/or \code{build_ext} arguments must be specified.
-Non-existing paths are created automatically.}
+Non-existing paths are created automatically.
+If not specified (or set to NULL), plots are \code{print}ed.}
 
 \item{build_order}{list of numerical vectors. The order in which to build
 each layer of the plot, where the first (lowest) layer is 1. Multiple
